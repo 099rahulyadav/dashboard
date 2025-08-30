@@ -4,12 +4,12 @@ import {
   Users, 
   FileText, 
   BookOpen, 
-  FileCheck, 
-  Briefcase, 
-  DollarSign, 
+  FilePen,   
   ShoppingCart, 
   BarChart3, 
   LogOut,
+  CircleDollarSign ,
+  FolderKanban,
   X
 } from 'lucide-react';
 
@@ -23,9 +23,9 @@ const navigationItems = [
   { icon: Users, label: 'Accounts', active: true },
   { icon: FileText, label: 'Proposals', active: false },
   { icon: BookOpen, label: 'Resources', active: false },
-  { icon: FileCheck, label: 'Contracts', active: false },
-  { icon: Briefcase, label: 'Projects', active: false },
-  { icon: DollarSign, label: 'Finance', active: false },
+  { icon: FilePen, label: 'Contracts', active: false },
+  { icon: FolderKanban, label: 'Projects', active: false },
+  { icon: CircleDollarSign , label: 'Finance', active: false },
   { icon: ShoppingCart, label: 'Procurements', active: false },
   { icon: BarChart3, label: 'KPIs', active: false },
 ];
@@ -43,7 +43,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       
       {/* Sidebar */}
       <div className={`
-        fixed lg:static top-0 bottom-0 left-0 z-30 w-64 bg-white border-r border-gray-200 
+        fixed lg:static top-0 bottom-0 left-0 z-30 w-64 bg-white border-r-0 border-t-0 rounded-tr-2xl  border-gray-200 
         transform ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0 
         transition-transform duration-300 ease-in-out flex flex-col
       `}>
@@ -63,9 +63,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
             {navigationItems.map((item, index) => (
               <li key={index}>
                 <button className={`
-                  w-full flex items-center space-x-3 px-3 py-2.5 rounded-lg text-left transition-colors
+                  w-full flex items-center space-x-3 px-3 py-2.5 mb-2.5 text-left transition-colors
                   ${item.active 
-                    ? 'text-gray-900 border-b-2 border-orange-500' 
+                    ? 'text-gray-900 border-b-2 border-orange-300' 
                     : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800'
                   }
                 `}>
@@ -78,7 +78,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </nav>
 
         {/* Logout */}
-        <div className="p-4 border-t border-gray-200">
+        <div className="p-4  border-gray-200">
           <button className="w-full flex items-center space-x-3 px-3 py-2.5 text-gray-600 hover:bg-gray-50 hover:text-gray-800 rounded-lg transition-colors">
             <LogOut size={18} />
             <span className="text-sm font-medium">Log-out</span>
