@@ -16,12 +16,13 @@ const accountsData = [
     value: '$8.5M',
     valueColor: 'text-green-600',
     growth: '+15.3% Growth',
-    borderColor: 'border-green-200',
-    growthColor: 'text-green-600',
+    borderColor: 'border-green-400',
+    growthColor: 'text-green-400',
     growthBg: 'bg-green-50',
-    riskColor: 'text-green-600',
+    riskColor: 'text-green-400',
     riskBg: 'bg-green-100',
     border: 'border-green-200',
+    accName:'David Rodriguez'
   },
   {
     id: 2,
@@ -35,14 +36,16 @@ const accountsData = [
     tier: 'Tier 1',
     category: 'Transportation',
     value: '$8.5M',
-    valueColor: 'text-orange-600',
+    valueColor: 'text-orange-400',
     growth: '+15.3% Growth',
     borderColor: 'border-orange-200',
-    growthColor: 'text-orange-600',
+    growthColor: 'text-orange-400',
     growthBg: 'bg-orange-50',
-    riskColor: 'text-orange-600',
+    riskColor: 'text-orange-400',
     riskBg: 'bg-orange-100',
     border: 'border-orange-200',
+    accName:'David Rodriguez',
+
   },
   {
     id: 3,
@@ -56,13 +59,14 @@ const accountsData = [
     tier: 'Tier 1',
     category: 'Transportation',
     value: '$8.5M',
-    valueColor: 'text-red-600',
+    valueColor: 'text-red-400',
     growth: '+15.3% Growth',
     borderColor: 'border-red-200',
-    growthColor: 'text-red-600',
+    growthColor: 'text-red-400',
     growthBg: 'bg-red-50',
     riskColor: 'text-red-600',
     riskBg: 'bg-red-100',
+    accName:'David Rodriguez'
   },
 ];
 
