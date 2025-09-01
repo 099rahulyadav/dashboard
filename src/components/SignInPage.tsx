@@ -77,7 +77,7 @@ export default function SignInPage() {
                   />
                   <Input
                     id="password"
-                    type={showPassword ? "text" : "password"}
+                    type={showPassword ? "password" : "text"}
                     placeholder="********"
                     className="pl-10 pr-10 py-2 border border-[#ED8A09]  rounded-xl focus:border-[#ED8A09]  focus:ring-0"
                     required
@@ -129,11 +129,11 @@ export default function SignInPage() {
       </div>
       {/* Right: Brand Info */}
       <div className="hidden md:flex flex-row justify-end items-center relative overflow-hidden">
-          <img
-            src={Frame}
-            alt="Megapolis Advisory logo"
-            className="h-full object-contain max-h-full"
-          />
+        <img
+          src={Frame}
+          alt="Megapolis Advisory logo"
+          className="h-full object-contain max-h-full"
+        />
       </div>
     </div>
   );

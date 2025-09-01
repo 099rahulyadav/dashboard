@@ -13,9 +13,9 @@ function App() {
       {/* <Dashboard />
       <CreateOrganization/>
       <EditOrganizationDetails/>
-      <OrganizationDetailsView/>
-      <SetNewPassword/> */}
-      <SignInPage/>
+      <OrganizationDetailsView/> */}
+      <SetNewPassword/>
+      {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
     </div>
   )
