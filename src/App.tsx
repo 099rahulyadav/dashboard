@@ -1,8 +1,8 @@
 // import React from 'react';
 // import CreateOrganization from "./components/CreateOrganization";
 // import Dashboard from "./components/Dashboard";
-// import EditOrganizationDetails from "./components/EditOrganizationDetails";
-import OrganizationDetailsView from "./components/OrganizationDetailsView";
+import EditOrganizationDetails from "./components/EditOrganizationDetails";
+// import OrganizationDetailsView from "./components/OrganizationDetailsView";
 // import { ResetPasswordDialog } from "./components/ResetPasswordDialog";
 // import SetNewPassword from "./components/SetNewPassword";
 // import SignInPage from "./components/SignInPage";
@@ -13,8 +13,8 @@ function App() {
     <div>
       {/* <Dashboard /> */}
       {/* <CreateOrganization/> */}
-      {/* <EditOrganizationDetails/> */}
-      <OrganizationDetailsView/>
+      <EditOrganizationDetails/>
+      {/* <OrganizationDetailsView/> */}
       {/* <SetNewPassword/> */}
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}

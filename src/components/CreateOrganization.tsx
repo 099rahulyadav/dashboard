@@ -68,7 +68,7 @@ export default function CreateOrganization() {
                   </Label>
                   <Badge
                     variant="secondary"
-                    className="bg-orange-400 text-white text-xs px-3 py-0 rounded-2xl flex items-center gap-1"
+                    className="bg-[#ED8A09] text-white text-xs px-3 py-0 rounded-2xl flex items-center gap-1"
                   >
                     <Sparkle className="h-3 w-3 text-white" /> AI Enhanced
                   </Badge>
