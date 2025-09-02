@@ -1,42 +1,14 @@
-import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Building2, Phone, MapPin, Globe, Calendar, Edit, MoreVertical, Users, FileText, Settings } from 'lucide-react';
 
-const MegapolisLogo = () => (
-  <div className="flex items-center gap-2">
-    <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
-      <Building2 className="w-5 h-5 text-white" />
-    </div>
-    <div className="flex flex-col">
-      <span className="font-bold text-lg text-gray-900">Megapolis</span>
-      <span className="text-sm text-gray-500">Advisory</span>
-    </div>
-  </div>
-);
 
-const UserAvatar = () => (
-  <div className="flex items-center gap-3">
-    <div className="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center">
-      <span className="text-white text-sm font-medium">JD</span>
-    </div>
-    <div className="flex flex-col">
-      <span className="text-sm font-medium">John Doe</span>
-      <span className="text-xs text-gray-500">john35@gmail.com</span>
-    </div>
-  </div>
-);
 
 export default function OrganizationDetailsView() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white border-b px-6 py-4 flex justify-between items-center">
-        <MegapolisLogo />
-        <UserAvatar />
-      </header>
-
       {/* Breadcrumb */}
       <div className="px-6 py-3 text-sm text-gray-500">
         Profile › Organization Detail
