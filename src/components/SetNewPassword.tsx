@@ -28,20 +28,21 @@ export default function SetNewPassword() {
           }
         `}
       </style>
+
       {/* Left Side - Form */}
       <div className="flex items-start justify-center bg-white p-8 pt-36 h-full">
         <Card className="w-full max-w-md shadow-none border-0">
-          <CardHeader >
+          <CardHeader>
             <CardTitle className="text-3xl font-bold text-orange-500">
               Set New Password
             </CardTitle>
             <p className="text-gray-500 text-sm">
-              Enter your e-mail address and we will send you a link to reset your
-              password
+              Please enter your new password and confirm it to update your account.
             </p>
           </CardHeader>
           <CardContent className="space-y-6">
             <div className="space-y-5">
+              {/* New Password */}
               <div className="space-y-2.5">
                 <Label htmlFor="newPassword">New Password *</Label>
                 <div className="relative mt-2">
@@ -63,6 +64,7 @@ export default function SetNewPassword() {
                     type="button"
                     variant="ghost"
                     size="sm"
+                    aria-label={showPassword.new ? "Hide password" : "Show password"}
                     className="absolute right-2 top-1 h-8 px-2"
                     onClick={() =>
                       setShowPassword({ ...showPassword, new: !showPassword.new })
@@ -81,6 +83,7 @@ export default function SetNewPassword() {
                 </p>
               </div>
 
+              {/* Confirm Password */}
               <div className="space-y-2.5">
                 <Label htmlFor="confirmPassword">Confirm Password *</Label>
                 <div className="relative mt-2">
@@ -105,6 +108,9 @@ export default function SetNewPassword() {
                     type="button"
                     variant="ghost"
                     size="sm"
+                    aria-label={
+                      showPassword.confirm ? "Hide password" : "Show password"
+                    }
                     className="absolute right-2 top-1 h-8 px-2"
                     onClick={() =>
                       setShowPassword({
@@ -122,10 +128,14 @@ export default function SetNewPassword() {
                 </div>
               </div>
 
+              {/* Action Buttons */}
               <Button className="w-full bg-black text-white py-5 rounded-xl text-center">
                 Update Password
               </Button>
-              <Button variant="outline" className="w-full rounded-xl py-5 text-center">
+              <Button
+                variant="outline"
+                className="w-full rounded-xl py-5 text-center"
+              >
                 Back to sign-in
               </Button>
             </div>
@@ -136,11 +146,13 @@ export default function SetNewPassword() {
       {/* Right Side - Illustration */}
       <div className="hidden lg:flex items-start justify-center p-0 pt-0 h-full relative">
         <div className="w-full h-screen flex items-end justify-end">
-          <img src={reseticon} alt=" password reset illustration w-auto object-contain" className="w-auto max-h-[80%] object-contain" style={{ position: 'absolute', bottom: 0, right: 0 }} />
+          <img
+            src={reseticon}
+            alt="Password reset illustration"
+            className="w-auto max-h-[80%] object-contain absolute bottom-0 right-0"
+          />
         </div>
       </div>
     </div>
   );
 }
-
-

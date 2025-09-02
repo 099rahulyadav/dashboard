@@ -21,7 +21,7 @@ export default function CreateOrganization() {
       <Header2 />
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center px-6 py-6">
+      <main className="flex-1 flex flex-col items-center px-6 py-4">
         {/* Title Section */}
         <div className="text-center mb-4 max-w-xl">
           <h1 className="text-2xl font-bold text-orange-500 mb-2">Create Your Organization</h1>
@@ -116,7 +116,7 @@ export default function CreateOrganization() {
                   placeholder="Enter Company Address"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full pl-8 pr-2 py-2 border-gray-300 focus:border-orange-400 focus:ring-orange-100 bg-gray-100 rounded-md resize-none"
+                  className="w-full pl-8 pr-2 py-2 border-gray-300 focus:border-orange-400 focus:ring-orange-300 bg-gray-100 rounded-md resize-none"
                 />
               </div>
             </div>
