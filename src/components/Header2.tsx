@@ -8,7 +8,7 @@ import john from '../assets/john.png';
 
 const Header2: React.FC = () => {
   return (
-    <header className="px-6 py-2 flex items-center justify-between bg-[#F5F3F2] ">
+    <header className="px-6 py-4 flex items-center justify-between bg-[#F5F3F2] ">
       {/* Left side - Logo */}
       <div className="flex items-center">
         <div className="flex items-center gap-3">
