@@ -25,7 +25,7 @@ export default function OrganizationDetailsView() {
       <Header2 />
 
       {/* Main Content */}
-      <main className="p-6">
+      <main className="p-2">
         <div className="max-w-5xl mx-auto px-4 md:px-20">
           {/* Breadcrumb just above card */}
           <div className="text-sm text-gray-500 mb-3 flex flex-wrap gap-1 items-center">

@@ -205,7 +205,7 @@ export default function EditOrganizationDetails() {
                         />
                       </div>
                     </div>
-                    <span className="text-sm text-gray-500 hidden md:block">or</span>
+                    <span className="text-sm  text-gray-400  md:block">or</span>
                     <div className="w-full md:flex-1">
                       <div className="relative">
                         <Phone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
@@ -227,7 +227,7 @@ export default function EditOrganizationDetails() {
                 </div>
 
                 {/* Action Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-end">
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-between">
                   <Button
                     variant="outline"
                     className="px-6 py-2 text-sm order-2 sm:order-1"

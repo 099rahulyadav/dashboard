@@ -21,7 +21,7 @@ export default function CreateOrganization() {
       <Header2 />
 
       {/* Main Content */}
-      <main className="flex-1 flex flex-col items-center px-6 py-4">
+      <main className="flex-1 flex flex-col items-center px-6 py-4 pt-2 ">
         {/* Title Section */}
         <div className="text-center mb-3 max-w-xl">
           <h1 className="text-2xl font-bold text-orange-500 mb-2">
@@ -174,11 +174,11 @@ export default function CreateOrganization() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex gap-6 pt-4 justify-between">
-              <Button variant="outline" className="px-6 py-2 text-sm mx-2">
+            <div className="flex gap-6 pt-2 justify-between">
+              <Button variant="outline" className=" py-2 text-sm mx-2">
                 Back to Sign-In
               </Button>
-              <Button className="px-6 py-2 mx-2 text-sm bg-black text-white">
+              <Button className=" py-2 mx-2 text-sm bg-black text-white">
                 Create Organization
               </Button>
             </div>
