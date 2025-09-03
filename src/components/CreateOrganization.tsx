@@ -23,8 +23,10 @@ export default function CreateOrganization() {
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center px-6 py-4">
         {/* Title Section */}
-        <div className="text-center mb-4 max-w-xl">
-          <h1 className="text-2xl font-bold text-orange-500 mb-2">Create Your Organization</h1>
+        <div className="text-center mb-3 max-w-xl">
+          <h1 className="text-2xl font-bold text-orange-500 mb-2">
+            Create Your Organization
+          </h1>
           <p className="text-gray-600 text-sm">
             Set up your organization to get started with the platform. You need an organization to access all features and
             collaborate with your team.
@@ -78,26 +80,37 @@ export default function CreateOrganization() {
                   <Input
                     id="website"
                     value={formData.website}
-                    placeholder="https://your-company.com"
                     onChange={(e) => setFormData({ ...formData, website: e.target.value })}
-                    className="pl-10 border-orange-200 focus:border-orange-400 focus:ring-orange-100 mt-2"
+                    placeholder="https://your-company.com"
+                    className="pl-10 mt-2 border 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-300 
+                      not-placeholder-shown:border-orange-300 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                 </div>
               </div>
 
               {/* Organization Name */}
               <div className="space-y-2">
-                <Label htmlFor="organizationName" className="text-sm font-medium">
-                  Organization Name *
-                </Label>
+                <div className="flex items-center">
+                  <Label htmlFor="organizationName" className="text-sm font-medium">
+                    Organization Name *
+                  </Label>
+                  <span className="ml-4 text-xs invisible">placeholder</span>
+                </div>
                 <div className="relative">
                   <Buildings className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                   <Input
                     id="organizationName"
-                    placeholder="Enter Company Name"
                     value={formData.organizationName}
                     onChange={(e) => setFormData({ ...formData, organizationName: e.target.value })}
-                    className="pl-10 border-gray-300 focus:border-orange-400 focus:ring-orange-100 mt-2"
+                    placeholder="Enter Company Name"
+                    className="pl-10 mt-2 border 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-300 
+                      not-placeholder-shown:border-orange-300 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                 </div>
               </div>
@@ -113,10 +126,15 @@ export default function CreateOrganization() {
                 <textarea
                   id="address"
                   rows={2}
-                  placeholder="Enter Company Address"
                   value={formData.address}
                   onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-                  className="w-full pl-8 pr-2 py-2 border-gray-300 focus:border-orange-400 focus:ring-orange-300 bg-gray-100 rounded-md resize-none"
+                  placeholder="Enter Company Address"
+                  className="w-full pl-8 pr-2 py-2 border 
+                    placeholder-shown:border-gray-300 
+                    focus:border-orange-300 
+                    not-placeholder-shown:border-orange-300 
+                    bg-gray-100 rounded-md resize-none 
+                    focus:outline-none focus:ring-0 focus-visible:ring-0"
                 />
               </div>
             </div>
@@ -131,17 +149,25 @@ export default function CreateOrganization() {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     placeholder="johndoe46@gmail.com"
-                    className="pl-10 border-orange-200 focus:border-orange-400 focus:ring-orange-100"
+                    className="pl-10 border 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-300 
+                      not-placeholder-shown:border-orange-300 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                 </div>
                 <span className="text-sm text-gray-500">or</span>
                 <div className="relative flex-1">
                   <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
                   <Input
-                    placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="pl-10 border-gray-300 focus:border-orange-400 focus:ring-orange-100"
+                    placeholder="Phone Number"
+                    className="pl-10 border 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-300 
+                      not-placeholder-shown:border-orange-300 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                 </div>
               </div>

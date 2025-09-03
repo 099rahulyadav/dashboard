@@ -23,13 +23,13 @@ export function ResetPasswordDialog() {
 
       {/* Modal Content */}
       <DialogContent className="sm:max-w-md bg-white !rounded-3xl items-center justify-center p-8">
-        
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-[#ED8A09] text-center">
             Reset your password
           </DialogTitle>
           <DialogDescription className="text-center text-gray-500">
-            Enter your e-mail address and we will send you a link to reset your password
+            Enter your e-mail address and we will send you a link to reset your
+            password
           </DialogDescription>
         </DialogHeader>
 
@@ -41,13 +41,17 @@ export function ResetPasswordDialog() {
               <EnvelopeSimple
                 size={20}
                 weight="regular"
-                className="absolute left-2 top-2 text-gray-800"
+                className="absolute left-2 top-2.5 text-gray-400"
               />
               <Input
                 id="reset-email"
                 type="email"
                 placeholder="johndoe46@gmail.com"
-                className="pl-10 mt-2 border-[#ED8A09] rounded-xl focus:border-[#ED8A09] focus:ring-0"
+                className="pl-10 mt-2 rounded-xl border
+                  placeholder-shown:border-gray-300
+                  focus:border-[#ED8A09]
+                  not-placeholder-shown:border-[#ED8A09]
+                  focus:outline-none focus:ring-0 focus-visible:ring-0"
               />
             </div>
           </div>
@@ -57,10 +61,7 @@ export function ResetPasswordDialog() {
             <Button className="w-full bg-[#0F0901] text-white rounded-lg">
               Send reset link
             </Button>
-            <Button
-              variant="outline"
-              className="w-full rounded-lg"
-            >
+            <Button variant="outline" className="w-full rounded-lg">
               Back to sign-in
             </Button>
           </div>

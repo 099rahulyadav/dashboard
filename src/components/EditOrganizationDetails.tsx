@@ -121,7 +121,11 @@ export default function EditOrganizationDetails() {
                             organizationName: e.target.value,
                           })
                         }
-                        className="pl-10 rounded-xl border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300"
+                        className="pl-10 rounded-xl border 
+                          placeholder-shown:border-gray-300 
+                          focus:border-orange-300 
+                          not-placeholder-shown:border-orange-300 
+                          focus:outline-none focus:ring-0 focus-visible:ring-0"
                       />
                     </div>
                   </div>
@@ -145,7 +149,11 @@ export default function EditOrganizationDetails() {
                         onChange={(e) =>
                           setFormData({ ...formData, website: e.target.value })
                         }
-                        className="pl-10 rounded-xl border-gray-300 focus:border-orange-300 focus:ring-2 focus:ring-orange-300"
+                        className="pl-10 rounded-xl border 
+                          placeholder-shown:border-gray-300 
+                          focus:border-orange-300 
+                          not-placeholder-shown:border-orange-300 
+                          focus:outline-none focus:ring-0 focus-visible:ring-0"
                       />
                     </div>
                   </div>
@@ -165,7 +173,12 @@ export default function EditOrganizationDetails() {
                       onChange={(e) =>
                         setFormData({ ...formData, address: e.target.value })
                       }
-                      className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-300 resize-none focus:outline-none focus:border-orange-300 focus:ring-orange-300"
+                      className="w-full pl-10 pr-4 py-3 rounded-xl border 
+                        placeholder-shown:border-gray-300 
+                        focus:border-orange-300 
+                        not-placeholder-shown:border-orange-300 
+                        resize-none 
+                        focus:outline-none focus:ring-0 focus-visible:ring-0"
                       rows={2}
                     />
                   </div>
@@ -183,7 +196,11 @@ export default function EditOrganizationDetails() {
                           onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
                           }
-                          className="pl-10 rounded-xl border-gray-300 focus:border-orange-300 focus:ring-orange-300"
+                          className="pl-10 rounded-xl border 
+                            placeholder-shown:border-gray-300 
+                            focus:border-orange-300 
+                            not-placeholder-shown:border-orange-300 
+                            focus:outline-none focus:ring-0 focus-visible:ring-0"
                           placeholder="johndoe46@gmail.com"
                         />
                       </div>
@@ -198,7 +215,11 @@ export default function EditOrganizationDetails() {
                           onChange={(e) =>
                             setFormData({ ...formData, phone: e.target.value })
                           }
-                          className="pl-10 rounded-xl border-gray-300 focus:border-orange-300 focus:ring-orange-300"
+                          className="pl-10 rounded-xl border 
+                            placeholder-shown:border-gray-300 
+                            focus:border-orange-300 
+                            not-placeholder-shown:border-orange-300 
+                            focus:outline-none focus:ring-0 focus-visible:ring-0"
                         />
                       </div>
                     </div>

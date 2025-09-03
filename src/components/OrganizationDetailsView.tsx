@@ -79,7 +79,7 @@ export default function OrganizationDetailsView() {
                   Administrator
                 </Badge>
                 <div className="flex flex-row gap-2 items-center text-sm">
-                  <span className="text-gray-400">Created on</span>
+                  <span className="text-gray-500 text-sm font-semibold">Created on</span>
                   <Calendar className="w-4 h-4" />
                   <span className="font-medium">August 24, 2025</span>
                 </div>
@@ -92,7 +92,7 @@ export default function OrganizationDetailsView() {
                   <div className="border-b border-gray-200 pb-2">
                     <h3 className="font-semibold mb-2">Company Website</h3>
                     <div className="flex items-center gap-2">
-                      <Globe className="w-4 h-4" />
+                      <Globe className="w-4 h-4 text-gray-600" />
                       <a
                         href="https://your-company.com"
                         className="hover:underline text-blue-600 break-words"

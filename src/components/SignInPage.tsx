@@ -30,7 +30,7 @@ export default function SignInPage() {
       </style>
 
       {/* Left: Sign In Form */}
-      <div className="flex items-center justify-center bg-white">
+      <div className="flex sm:ml-10 sm:mb-5 items-center justify-center bg-white">
         <Card className="w-full max-w-md shadow-none border-0">
           <CardHeader className="space-y-2">
             <div className="flex flex-row items-center gap-1">
@@ -60,7 +60,11 @@ export default function SignInPage() {
                     id="email"
                     type="email"
                     placeholder="johndoe46@gmail.com"
-                    className="pl-10 pr-3 py-2 border border-gray-300 rounded-xl focus:border-[#ED8A09] focus:ring-0"
+                    className="pl-10 pr-3 py-2 rounded-xl
+                      placeholder-shown:border-gray-300
+                      focus:border-[#ED8A09]
+                      not-placeholder-shown:border-[#ED8A09]
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                     required
                   />
                 </div>
@@ -80,7 +84,11 @@ export default function SignInPage() {
                     id="password"
                     type={showPassword ? "password" : "text"}
                     placeholder="********"
-                    className="pl-10 pr-10 py-2 border border-gray-300 rounded-xl focus:border-[#ED8A09] focus:ring-0"
+                    className="pl-10 pr-10 py-2 rounded-xl
+                      placeholder-shown:border-gray-300
+                      focus:border-[#ED8A09]
+                      not-placeholder-shown:border-[#ED8A09]
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                     required
                   />
                   <button

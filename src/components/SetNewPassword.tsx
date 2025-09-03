@@ -30,14 +30,15 @@ export default function SetNewPassword() {
       </style>
 
       {/* Left Side - Form */}
-      <div className="flex items-start justify-center bg-white p-8 pt-36 h-full">
+      <div className="flex items-start justify-center md:ml-6 bg-white p-8 sm:py-34 h-full">
         <Card className="w-full max-w-md shadow-none border-0">
           <CardHeader>
             <CardTitle className="text-3xl font-bold text-orange-500">
               Set New Password
             </CardTitle>
             <p className="text-gray-500 text-sm">
-              Please enter your new password and confirm it to update your account.
+              Please enter your new password and confirm it to update your
+              account.
             </p>
           </CardHeader>
           <CardContent className="space-y-6">
@@ -58,7 +59,11 @@ export default function SetNewPassword() {
                     onChange={(e) =>
                       setPasswords({ ...passwords, newPassword: e.target.value })
                     }
-                    className="pl-10 pr-10 py-5 border border-gray-300 rounded-xl bg-[#F3F3F3]"
+                    className="pl-10 pr-10 py-5 rounded-xl bg-[#F3F3F3] 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-500 
+                      not-placeholder-shown:border-orange-500 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                   <Button
                     type="button"
@@ -102,7 +107,11 @@ export default function SetNewPassword() {
                         confirmPassword: e.target.value,
                       })
                     }
-                    className="pl-10 pr-10 py-5 border border-gray-300 rounded-xl bg-[#F3F3F3]"
+                    className="pl-10 pr-10 py-5 rounded-xl bg-[#F3F3F3] 
+                      placeholder-shown:border-gray-300 
+                      focus:border-orange-500 
+                      not-placeholder-shown:border-orange-500 
+                      focus:outline-none focus:ring-0 focus-visible:ring-0"
                   />
                   <Button
                     type="button"
@@ -144,7 +153,7 @@ export default function SetNewPassword() {
       </div>
 
       {/* Right Side - Illustration */}
-      <div className="hidden lg:flex items-start justify-center p-0 pt-0 h-full relative">
+      <div className="hidden lg:flex mr-22 items-start justify-center p-0 pt-0 h-full relative">
         <div className="w-full h-screen flex items-end justify-end">
           <img
             src={reseticon}
