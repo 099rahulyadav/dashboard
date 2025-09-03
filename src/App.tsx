@@ -7,11 +7,14 @@ import Dashboard from "./components/Dashboard";
 // import SetNewPassword from "./components/SetNewPassword";
 // import SignInPage from "./components/SignInPage";
 // import Header2 from "./components/Header2";
+// import CreateAccountModal from "./components/CreateAccountModal";
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      {/* <Dashboard /> */}
+       //new component ----1
+      {/* <CreateAccountModal  /> */}
       {/* <CreateOrganization/> */}
       {/* <EditOrganizationDetails/> */}
       {/* <OrganizationDetailsView/> */}
