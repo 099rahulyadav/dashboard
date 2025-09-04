@@ -1,7 +1,6 @@
 import React from 'react';
 import { Bell }  from "phosphor-react";
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Button } from '@/components/ui/button';
 import logo from '../assets/logo.png';
 import john from '../assets/john.png';
 
@@ -20,14 +19,10 @@ const Header2: React.FC = () => {
 
       {/* Right side - Notifications and user */}
       <div className="flex items-center gap-4">
-        <Button 
-          variant="ghost" 
-          size="icon"
-          className="relative text-gray-600 hover:text-gray-800 hover:bg-gray-200 rounded-full bg-white"
-        >
-          <Bell size={20} />
-          <span className="absolute -top-0 -right-0 w-2 h-2 bg-red-500 rounded-full"></span>
-        </Button>
+        <button className=" text-gray-600  hover:text-gray-800 relative bg-[#f8f7f6]  rounded-full p-3">
+                  <Bell  size={20} />
+                  <span className="absolute -top-0 -right-0 w-2 h-2 bg-red-500 rounded-full"></span>
+                </button>
         
         <div className="flex items-center gap-3">
           <Avatar className="w-10 h-10">
