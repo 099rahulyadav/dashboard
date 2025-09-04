@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Building, User, TrendingUp, Sparkles,Cpu } from 'lucide-react';
+import { Sparkle,Cpu,MapPin,TrendUp,User,Buildings } from 'phosphor-react';
 
 interface Account {
   id: number;
@@ -51,7 +51,7 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
           {account.name}
         </h3>
         <div className="flex-shrink-0 w-10 h-10 mt-1 bg-gray-100 rounded-full flex items-center justify-center">
-          <Sparkles className="text-orange-400" size={16} />
+          <Sparkle className="text-orange-400" weight='fill' size={18} />
         </div>
       </div>
 
@@ -66,7 +66,7 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
           <span className={`text-sm font-semibold  ${account.growthColor}`}>
             {account.score}
           </span>
-          <TrendingUp className={account.growthColor} size={12} />
+          <TrendUp className={account.growthColor} size={12} />
         </div>
         <div
           className={`px-3 items-center rounded-full border ${account.borderColor} ${account.riskBg}`}
@@ -88,7 +88,7 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
           <span className="truncate">{account.location}</span>
         </div>
         <div className="flex items-center space-x-1.5">
-          <Building size={16} className="text-gray-400" />
+          <Buildings size={16} className="text-gray-400" />
           <span className="truncate">{account.office}</span>
         </div>
       </div>

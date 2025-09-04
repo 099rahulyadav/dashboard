@@ -6,18 +6,18 @@ import Dashboard from "./components/Dashboard";
 // import { ResetPasswordDialog } from "./components/ResetPasswordDialog";
 // import SetNewPassword from "./components/SetNewPassword";
 // import SignInPage from "./components/SignInPage";
-import Header2 from "./components/Header2";
+// import Header2 from "./components/Header2";
 // import CreateAccountModal from "./components/CreateAccountModal";
 // import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
+// import Header from "./components/Header";
 
 function App() {
   return (
     <div>
-      {/* <Dashboard /> */}
-      <Header onMenuClick={function (): void {
+      <Dashboard />
+      {/* <Header onMenuClick={function (): void {
         throw new Error("Function not implemented.");
-      } }/>
+      } }/> */}
       {/* <Sidebar isOpen={false} onClose={function (): void {
         throw new Error("Function not implemented.");
       } } /> */}
@@ -29,7 +29,7 @@ function App() {
       {/* <SetNewPassword/> */}
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
-      <Header2/>
+      {/* <Header2/> */}
     </div>
   )
 }

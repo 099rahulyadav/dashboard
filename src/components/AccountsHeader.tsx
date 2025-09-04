@@ -1,6 +1,5 @@
 import React from 'react';
-import { ChevronDown, Plus, FileText,UserRoundPen} from 'lucide-react';
-
+import { CaretDown, Plus, Files,Users} from 'phosphor-react'
 const AccountsHeader: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-5">
@@ -11,18 +10,18 @@ const AccountsHeader: React.FC = () => {
       
       <div className="flex items-center space-x-4 mt-4 lg:mt-0">
         <button className="flex items-center space-x-2 px-4 py-2 bg-white border-[1px] border-gray-400 rounded-full hover:bg-gray-50 transition-colors">
-          <UserRoundPen size={16} className="text-gray-500" />
+          <Users size={16} weight='fill' className="text-gray-900" />
           <span className="text-sm font-medium text-gray-700">All Accounts</span>
-          <ChevronDown size={16} className="text-gray-500" />
+          <CaretDown size={16} className="text-gray-500" />
         </button>
         
         <button className="flex items-center space-x-2 px-4 py-2 bg-white border-[1px] border-gray-400 rounded-full hover:bg-gray-50 transition-colors">
           <span className="text-sm font-medium text-gray-700">Actions</span>
-          <ChevronDown size={16} className="text-gray-500" />
+          <CaretDown size={16} className="text-gray-500" />
         </button>
         
         <button className="flex items-center space-x-2 px-4 py-2 bg-gray-50 border-[1px] border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
-          <FileText size={16} className="text-gray-500" />
+          <Files size={16} weight='fill' className="text-gray-900" />
           <span className="text-sm font-medium text-gray-700">Client Survey</span>
         </button>
         

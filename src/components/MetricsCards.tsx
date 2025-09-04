@@ -1,33 +1,33 @@
 import React from 'react';
-import { Building2, Heart, AlertTriangle, TrendingUp, DollarSign } from 'lucide-react';
+import { Buildings, Heartbeat, Warning, ChartLineUp, Coins } from 'phosphor-react';
 
 const MetricsCards: React.FC = () => {
   const metrics = [
     {
-      icon: Building2,
+      icon: Buildings,
       label: 'Total Accounts',
       value: '15',
     },
     {
-      icon: Heart,
+      icon: Heartbeat,
       label: 'AI Health Score',
       value: '78%',
       subtitle: 'Average',
     },
     {
-      icon: AlertTriangle,
+      icon: Warning,
       label: 'High Risk',
       value: '3',
       subtitle: 'Require attention',
     },
     {
-      icon: TrendingUp,
+      icon: ChartLineUp,
       label: 'Growing',
       value: '7',
       subtitle: 'Positive Trend',
     },
     {
-      icon: DollarSign,
+      icon: Coins,
       label: 'Total Value',
       value: '$92.6M',
       subtitle: 'Portfolio',
@@ -40,7 +40,7 @@ const MetricsCards: React.FC = () => {
         <div key={index} className="bg-white p-2 xl:p-3 rounded-2xl border-[2px] border-gray-400 hover:shadow-sm transition-shadow " >
           <div className="flex items-center space-x-2 xl:space-x-3">
             <div className={`p-4 rounded-full bg-gray-100`}>
-              <metric.icon  size={20} />
+              <metric.icon  size={22} />
             </div>
             <div className="flex-1">
               <div className="text-xs text-gray-500 font-medium truncate">{metric.label}</div>
