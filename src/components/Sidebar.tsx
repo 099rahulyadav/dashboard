@@ -74,7 +74,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                       w-full flex items-center space-x-3 px-3 py-2.5 mb-2.5 text-left
                       ${
                         isActive
-                          ? "text-black border-b-2 border-orange-300"
+                          ? "text-black border-b-2 border-gray-900 "
                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-800"
                       }
                     `}
@@ -82,6 +82,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                     <item.icon
                       size={18}
                       className={isActive ? "text-black" : ""}
+                      weight="fill"
                     />
                     <span className="text-sm font-medium">{item.label}</span>
                   </button>

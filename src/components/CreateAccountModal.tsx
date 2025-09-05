@@ -122,7 +122,7 @@ export default function CreateAccountDialog() {
                 Cancel
             </Button>
             <Button className="px-6 py-2 text-sm bg-black text-white order-1 sm:order-2">
-                Save Changes
+                Create Account
             </Button>
          </div>
       </DialogContent>

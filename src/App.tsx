@@ -10,7 +10,8 @@
 // import CreateAccountModal from "./components/CreateAccountModal";
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
-import AccountOverview from "./components/AccountOverview";
+// import AccountOverview from "./components/AccountOverview";
+import AccountOverviewEdit from "./components/AccountOverviewEdit";
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
       {/* <Header2/> */}
-      <AccountOverview/>
+      {/* <AccountOverview/> */}
+      <AccountOverviewEdit/>
     </div>
   )
 }
