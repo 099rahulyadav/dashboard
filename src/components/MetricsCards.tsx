@@ -1,5 +1,5 @@
 import React from 'react';
-import { Buildings, Heartbeat, Warning, ChartLineUp, Coins } from 'phosphor-react';
+import { Buildings, Heartbeat, Warning, TrendUp, Coins } from 'phosphor-react';
 
 const MetricsCards: React.FC = () => {
   const metrics = [
@@ -21,7 +21,7 @@ const MetricsCards: React.FC = () => {
       subtitle: 'Require attention',
     },
     {
-      icon: ChartLineUp,
+      icon: TrendUp,
       label: 'Growing',
       value: '7',
       subtitle: 'Positive Trend',
@@ -39,8 +39,8 @@ const MetricsCards: React.FC = () => {
       {metrics.map((metric, index) => (
         <div key={index} className="bg-white p-2 xl:p-3 rounded-2xl border-[2px] border-gray-400 hover:shadow-sm transition-shadow " >
           <div className="flex items-center space-x-2 xl:space-x-3">
-            <div className={`p-4 rounded-full bg-gray-100`}>
-              <metric.icon  size={22} />
+            <div className="p-4 rounded-full bg-gray-100 text-orange-400">
+              <metric.icon  size={20} weight='fill' />
             </div>
             <div className="flex-1">
               <div className="text-xs text-gray-500 font-medium truncate">{metric.label}</div>

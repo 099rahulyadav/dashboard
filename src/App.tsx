@@ -1,6 +1,6 @@
 // import React from 'react';
 // import CreateOrganization from "./components/CreateOrganization";
-import Dashboard from "./components/Dashboard";
+// import Dashboard from "./components/Dashboard";
 // import EditOrganizationDetails from "./components/EditOrganizationDetails";
 // import OrganizationDetailsView from "./components/OrganizationDetailsView";
 // import { ResetPasswordDialog } from "./components/ResetPasswordDialog";
@@ -10,11 +10,12 @@ import Dashboard from "./components/Dashboard";
 // import CreateAccountModal from "./components/CreateAccountModal";
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
+import AccountOverview from "./components/AccountOverview";
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      {/* <Dashboard /> */}
       {/* <Header onMenuClick={function (): void {
         throw new Error("Function not implemented.");
       } }/> */}
@@ -30,6 +31,7 @@ function App() {
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
       {/* <Header2/> */}
+      <AccountOverview/>
     </div>
   )
 }
