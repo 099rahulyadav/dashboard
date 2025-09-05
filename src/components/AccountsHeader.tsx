@@ -1,5 +1,6 @@
 import React from 'react';
-import { CaretDown, Plus, Files,Users} from 'phosphor-react'
+import { CaretDown, Files,Users} from 'phosphor-react'
+import CreateAccountModal from './CreateAccountModal';
 const AccountsHeader: React.FC = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-5">
@@ -25,10 +26,11 @@ const AccountsHeader: React.FC = () => {
           <span className="text-sm font-medium text-gray-700">Client Survey</span>
         </button>
         
-        <button className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors">
+        {/* <button className="flex items-center space-x-2 px-4 py-2 bg-gray-900 text-white rounded-full hover:bg-gray-800 transition-colors">
           <Plus size={16} />
           <span className="text-sm font-medium">Create Account</span>
-        </button>
+        </button> */}
+        <CreateAccountModal />
       </div>
     </div>
   );

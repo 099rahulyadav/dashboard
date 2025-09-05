@@ -5,14 +5,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogFooter,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Select, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Globe } from "phosphor-react";
-import { Sparkle } from "phosphor-react";
+import { Sparkle,Plus,Globe } from "phosphor-react";
 
 export default function CreateAccountDialog() {
   return (
@@ -20,7 +18,7 @@ export default function CreateAccountDialog() {
       {/* Trigger: "+ Create Account" button */}
       <DialogTrigger asChild>
         <Button className="bg-[#0F0901] text-white rounded-2xl">
-           Create Account
+          <Plus size={16} /> Create Account
         </Button>
       </DialogTrigger>
 
