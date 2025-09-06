@@ -11,8 +11,10 @@
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
 // import AccountOverview from "./components/AccountOverview";
-import AccountContact from "./components/AccountContact";
+// import AccountContact from "./components/AccountContact";
 // import AccountOverviewEdit from "./components/AccountOverviewEdit";
+
+import PastPerformance from "./components/PastPerformance";
 
 function App() {
   return (
@@ -35,7 +37,8 @@ function App() {
       {/* <Header2/> */}
       {/* <AccountOverview/> */}
       {/* <AccountOverviewEdit/> */}
-      <AccountContact/>
+      {/* <AccountContact/> */}
+      <PastPerformance/>
     </div>
   )
 }
