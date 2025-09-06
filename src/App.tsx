@@ -11,7 +11,8 @@
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
 // import AccountOverview from "./components/AccountOverview";
-import AccountOverviewEdit from "./components/AccountOverviewEdit";
+import AccountContact from "./components/AccountContact";
+// import AccountOverviewEdit from "./components/AccountOverviewEdit";
 
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
       {/* <ResetPasswordDialog/> */}
       {/* <Header2/> */}
       {/* <AccountOverview/> */}
-      <AccountOverviewEdit/>
+      {/* <AccountOverviewEdit/> */}
+      <AccountContact/>
     </div>
   )
 }

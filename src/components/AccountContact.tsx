@@ -5,10 +5,9 @@ import Breadcrumb from './Breadcrumb';
 import OverviewMetrics from './OverviewMetrics';
 import AccountOverviewHeader from './AccountOverviewHeader';
 import AccountOverviewMenu from './AccountOverviewMenu';
-import AccountInformationEdit from './AccountInformationEdit';
-import RecentActivity from './RecentActivity';
+import ClientContact from './ClientContact';
 
-const AccountOverviewEdit: React.FC = () => {
+const AccountContact: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -24,21 +23,11 @@ const AccountOverviewEdit: React.FC = () => {
       <div className="max-w-none h-full flex flex-col">
         <Breadcrumb />
         <div className="flex-1 flex flex-col min-h-0">
-          <AccountOverviewHeader /> 
-          <AccountOverviewMenu />
-          {/* Menu Tabs (full width) */}
-                <div >
-                  <OverviewMetrics />
-                </div>
-                {/* Account Info + Recent Activity */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                  <div className="lg:col-span-2">
-                    <AccountInformationEdit />
-                  </div>
-                  <div>
-                    <RecentActivity />
-                  </div>
-                </div>
+          <AccountOverviewHeader />
+          <OverviewMetrics />
+          <AccountOverviewMenu /> 
+          {/* Account  card  */}
+          <ClientContact/>
         </div>
       </div>
     </div>
@@ -48,4 +37,4 @@ const AccountOverviewEdit: React.FC = () => {
   );
 };
 
-export default AccountOverviewEdit;
+export default AccountContact;
