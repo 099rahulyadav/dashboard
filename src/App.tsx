@@ -13,8 +13,9 @@
 // import AccountOverview from "./components/AccountOverview";
 // import AccountContact from "./components/AccountContact";
 // import AccountOverviewEdit from "./components/AccountOverviewEdit";
+// import PastPerformance from "./components/PastPerformance";
 
-import PastPerformance from "./components/PastPerformance";
+import MyAccountNotes from "./components/MyAccountNotes";
 
 function App() {
   return (
@@ -38,7 +39,9 @@ function App() {
       {/* <AccountOverview/> */}
       {/* <AccountOverviewEdit/> */}
       {/* <AccountContact/> */}
-      <PastPerformance/>
+      {/* <PastPerformance/> */}
+      <MyAccountNotes/>
+
     </div>
   )
 }
