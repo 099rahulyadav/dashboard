@@ -42,7 +42,7 @@ const getBorderColor = (riskLevel: string): string => {
 const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
   return (
     <div 
-      className="bg-white rounded-2xl p-4 hover:shadow-lg transition-all duration-200 cursor-pointer relative overflow-hidden border-b-4"
+      className="bg-white rounded-2xl p-3 hover:shadow-lg transition-all duration-200 cursor-pointer relative overflow-hidden border-b-4"
       style={{ borderBottomColor: getBorderColor(account.riskLevel) }}
     >
       {/* Header with title and star */}
@@ -51,7 +51,7 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
           {account.name}
         </h3>
         <div className="flex-shrink-0 w-10 h-10 mt-1 bg-gray-100 rounded-full flex items-center justify-center">
-          <Sparkle className="text-orange-400" weight='fill' size={18} />
+          <Sparkle className="text-primary-color" weight='fill' size={18} />
         </div>
       </div>
 
@@ -78,17 +78,17 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
       </div>
 
       {/* Contact and location info */}
-      <div className="flex items-center space-x-1 mb-3 text-gray-400 text-xs">
-        <div className="flex items-center space-x-0 border-r border-gray-200 pr-2">
-          <User size={16} className="text-gray-400" />
+      <div className="flex items-center space-x-0.5 mb-3 text-gray-400 text-xs">
+        <div className="flex items-center space-x-0.5 border-r border-gray-200 pr-1">
+          <User size={14} className="text-gray-400"  />
           <span className="truncate">{account.accName}</span>
         </div>
-        <div className="flex items-center space-x-1.5 border-r border-gray-200 pr-2">
-          <MapPin size={16} className="text-gray-400" />
+        <div className="flex items-center space-x-0.5 border-r border-gray-200 pr-1">
+          <MapPin size={14} className="text-gray-400" />
           <span className="truncate">{account.location}</span>
         </div>
-        <div className="flex items-center space-x-1.5">
-          <Buildings size={16} className="text-gray-400" />
+        <div className="flex items-center space-x-0.5">
+          <Buildings size={14} className="text-gray-400"  />
           <span className="truncate">{account.office}</span>
         </div>
       </div>

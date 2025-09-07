@@ -81,7 +81,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                   >
                     <item.icon
                       size={18}
-                      className={isActive ? "text-black" : ""}
+                      className={isActive ? "text-black" : "text-strokes-dark"}
                       weight="fill"
                     />
                     <span className="text-sm font-medium">{item.label}</span>

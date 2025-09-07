@@ -1,61 +1,64 @@
-import React from 'react';
-import { Buildings, Heartbeat, Warning, TrendUp, Coins } from 'phosphor-react';
+import type React from "react"
+import { Buildings, Heartbeat, Warning, TrendUp, Coins } from "phosphor-react"
 
 const MetricsCards: React.FC = () => {
   const metrics = [
     {
       icon: Buildings,
-      label: 'Total Accounts',
-      value: '15',
+      label: "Total Accounts",
+      value: "15",
     },
     {
       icon: Heartbeat,
-      label: 'AI Health Score',
-      value: '78%',
-      subtitle: 'Average',
+      label: "AI Health Score",
+      value: "78%",
+      subtitle: "Average",
     },
     {
       icon: Warning,
-      label: 'High Risk',
-      value: '3',
-      subtitle: 'Require attention',
+      label: "High Risk",
+      value: "3",
+      subtitle: "Require attention",
     },
     {
       icon: TrendUp,
-      label: 'Growing',
-      value: '7',
-      subtitle: 'Positive Trend',
+      label: "Growing",
+      value: "7",
+      subtitle: "Positive Trend",
     },
     {
       icon: Coins,
-      label: 'Total Value',
-      value: '$92.6M',
-      subtitle: 'Portfolio',
+      label: "Total Value",
+      value: "$92.6M",
+      subtitle: "Portfolio",
     },
-  ];
+  ]
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 xl:gap-6 mb-4 xl:mb-8">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-3 xl:gap-4 mb-4 xl:mb-8">
       {metrics.map((metric, index) => (
-        <div key={index} className="bg-white p-2 xl:p-3 rounded-2xl border-[2px] border-gray-400 hover:shadow-sm transition-shadow " >
-          <div className="flex items-center space-x-2 xl:space-x-3">
-            <div className="p-4 rounded-full bg-gray-100 text-orange-400">
-              <metric.icon  size={20} weight='fill' />
+        <div
+          key={index}
+          className="bg-white p-2 sm:p-3 xl:p-4 rounded-2xl border-[2px] border-strokes-dark hover:shadow-sm transition-shadow min-w-0"
+        >
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="p-1.5 sm:p-2 xl:p-3 rounded-full bg-input-default text-primary-color flex-shrink-0">
+              <metric.icon size={14} weight="fill" />
             </div>
-            <div className="flex-1">
-              <div className="text-xs text-gray-500 font-medium truncate">{metric.label}</div>
-              <div>
-                <span className='text-base xl:text-lg font-bold text-orange-400'>{metric.value}</span>
-                 <span className=' mx-1.5 text-sm font-semibold text-gray-800'>{metric.subtitle}</span></div>
-              {/* {metric.subtitle && (
-                <div className="text-xs text-gray-400 truncate">{metric.subtitle}</div>
-              )} */}
+            <div className="min-w-0 flex-1">
+              <div className="text-[10px] sm:text-xs text-secondary-text font-medium mb-0.5 truncate">{metric.label}</div>
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <div className="text-xs sm:text-sm xl:text-base font-bold text-black ">{metric.value}</div>
+                {metric.subtitle && (
+                  <div className="text-[10px] sm:text-xs font-semibold text-black truncate">{metric.subtitle}</div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default MetricsCards;
+export default MetricsCards

@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+
+
+/* index.css */
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+@theme {
+      /* button */
+  --color-button: #0F0901;
+      /* button-hover */
+  --color-button-hover: #000000;
+      /* primary-text-orange */
+  --color-primary-color: #ED8A09;
+      /* secondary-text */
+  --color-secondary-text: #A7A7A7;
+      /* input-default-gray */
+  --color-input-default: #F3F3F3;
+      /* input-active-white */
+  --color-input-active: #FFFFFF;
+      /* background-color */
+  --color-background-color: #F5F3F2;
+       /* gray-border */
+  --color-stroke-gray: #E6E6E6;  
+      /* orange-border */
+  --color-strokes: #FF7B00;  
+     /* dark-gray-border */
+  --color-strokes-dark: #6C6C6C;
+  
+}
+
+

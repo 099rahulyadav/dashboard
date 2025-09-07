@@ -7,7 +7,7 @@ const Dashboard: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden" style={{ backgroundColor: '#F5F3F2' }}>
+    <div className="h-screen flex flex-col overflow-hidden bg-background-color" >
       {/* Fixed Header */}
       <Header onMenuClick={() => setSidebarOpen(true)} />
       

@@ -72,7 +72,7 @@ const accountsData = [
 
 const AccountsList: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-4">
       {accountsData.map((account) => (
         <AccountCard key={account.id} account={account}  />
       ))}
