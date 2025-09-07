@@ -1,6 +1,6 @@
 // import React from 'react';
 // import CreateOrganization from "./components/CreateOrganization";
-import Dashboard from "./components/Dashboard";
+// import Dashboard from "./components/Dashboard";
 // import EditOrganizationDetails from "./components/EditOrganizationDetails";
 // import OrganizationDetailsView from "./components/OrganizationDetailsView";
 // import { ResetPasswordDialog } from "./components/ResetPasswordDialog";
@@ -10,7 +10,7 @@ import Dashboard from "./components/Dashboard";
 // import CreateAccountModal from "./components/CreateAccountModal";
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
-// import AccountOverview from "./components/AccountOverview";
+import AccountOverview from "./components/AccountOverview";
 // import AccountContact from "./components/AccountContact";
 // import AccountOverviewEdit from "./components/AccountOverviewEdit";
 // import PastPerformance from "./components/PastPerformance";
@@ -22,7 +22,7 @@ import Dashboard from "./components/Dashboard";
 function App() {
   return (
     <div>
-      <Dashboard />
+      {/* <Dashboard /> */}
        {/* //new component ----1 */}
       {/* <CreateAccountModal  /> */}
       {/* <CreateOrganization/> */}
@@ -32,7 +32,7 @@ function App() {
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
       {/* <Header2/> */}
-      {/* <AccountOverview/> */}
+      <AccountOverview/>
       {/* <AccountOverviewEdit/> */}
       {/* <AccountContact/> */}
       {/* <PastPerformance/> */}
