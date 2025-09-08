@@ -15,14 +15,14 @@ import AccountContact from "./components/AccountContact";
 import AccountOverviewEdit from "./components/AccountOverviewEdit";
 import PastPerformance from "./components/PastPerformance";
 // import MyAccountNotes from "./components/MyAccountNotes";
-// import MyAccountFinancial from "./components/MyAccountFinancial";
+import MyAccountFinancial from "./components/MyAccountFinancial";
 
 // import MyOpportunities from "./components/MyOpportunities";
 
 function App() {
   return (
     <div>
-      <Dashboard />
+      {/* <Dashboard /> */}
        {/* //new component ----1 */}
       {/* <CreateAccountModal  /> */}
       {/* <CreateOrganization/> */}
@@ -37,7 +37,7 @@ function App() {
       {/* <AccountContact/> */}
       {/* <PastPerformance/> */}
       {/* <MyAccountNotes/> */}
-      {/* <MyAccountFinancial/> */}
+      <MyAccountFinancial/>
       {/* <MyOpportunities/> */}
 
     </div>
