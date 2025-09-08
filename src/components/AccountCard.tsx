@@ -29,11 +29,11 @@ interface AccountCardProps {
 const getBorderColor = (riskLevel: string): string => {
   switch (riskLevel.toLowerCase()) {
     case 'low risk':
-      return '#10B981'; // green
+      return '#5F936F'; // green
     case 'medium risk':
-      return '#F59E0B'; // orange
+      return '#CD812A'; // orange
     case 'high risk':
-      return '#EF4444'; // red
+      return '#FF7B7B'; // red
     default:
       return '#6B7280'; // gray
   }
@@ -50,7 +50,7 @@ const AccountCard: React.FC<AccountCardProps> = ({ account }) => {
         <h3 className="text-lg xl:text-lg font-bold text-gray-900 leading-tight pr-6">
           {account.name}
         </h3>
-        <div className="flex-shrink-0 w-10 h-10 mt-1 bg-gray-100 rounded-full flex items-center justify-center">
+        <div className="flex-shrink-0 w-10 h-10 mt-1 bg-input-default rounded-full flex items-center justify-center">
           <Sparkle className="text-primary-color" weight='fill' size={18} />
         </div>
       </div>

@@ -46,7 +46,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       {/* Sidebar */}
       <div
         className={`
-        fixed lg:static top-0 bottom-0 left-0 z-30 w-64 bg-white border-r-0 border-t-0 rounded-tr-2xl border-gray-200 
+        fixed lg:static top-0 bottom-0 left-0 z-30 w-50 bg-white border-r-0 border-t-0 rounded-tr-2xl border-gray-200 
         transform ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 
         transition-transform duration-300 ease-in-out flex flex-col
       `}
@@ -93,9 +93,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
         </nav>
 
         {/* Logout */}
-        <div className="p-4 border-gray-200">
-          <button className="w-full flex items-center space-x-3 px-3 mb-10 text-black rounded-lg transition-colors">
-            <SignOut size={18} weight="bold" className="text-black" />
+        <div className="p-4 hover:text-white">
+          <button className="w-full flex items-center space-x-3 pl-3  py-2 border border-stroks-dark mb-4 md:mb-0 text-black rounded-xl transition-colors ">
+            <SignOut size={18} weight="bold" className="text-black " />
             <span className="text-sm font-medium">Log-out</span>
           </button>
         </div>
