@@ -11,15 +11,15 @@ const AccountContact: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="h-screen flex flex-col overflow-hidden" style={{ backgroundColor: '#F5F3F2' }}>
+    <div className="h-screen flex flex-col overflow-hidden bg-background-color">
       {/* Fixed Header */}
-      <Header2  />
+      <Header2 onMenuClick={() => setSidebarOpen(true)} />
       
       {/* Main layout below header */}
       <div className="flex flex-1 min-h-0">
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
         <main className="flex-1 overflow-y-auto overflow-x-hidden">
-          <div className="flex-1 px-6" style={{ backgroundColor: '#F5F3F2' }}>
+          <div className="flex-1 px-6 bg-background-color" >
       <div className="max-w-none h-full flex flex-col">
         <Breadcrumb />
         <div className="flex-1 flex flex-col min-h-0">
