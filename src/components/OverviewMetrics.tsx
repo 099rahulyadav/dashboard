@@ -30,16 +30,16 @@ const OverviewMetrics: React.FC = () => {
       {metrics.map((metric, index) => (
         <div
           key={index}
-          className="bg-white p-3 xl:p-4 rounded-2xl border-[2px] border-gray-300 hover:shadow-sm transition-shadow w-full"
+          className="bg-white p-3 xl:p-3 rounded-2xl border-[1px] border-stroke-dark hover:shadow-sm transition-shadow w-full"
         >
           <div className="flex items-center space-x-3">
-            <div className="p-4 rounded-full bg-gray-100 text-orange-400">
+            <div className="p-4 rounded-full bg-input-default text-primary-color">
               <metric.icon size={18} weight="fill" />
             </div>
-            <div className="flex-1">
-              <div className="text-xs text-gray-500 font-medium">{metric.label}</div>
+            <div className="flex-1  whitespace-nowrap">
+              <div className="text-xs text-secondary-text font-medium">{metric.label}</div>
               <div>
-                <span className="text-base xl:text-lg font-bold text-gray-900">
+                <span className="text-base xl:text-lg font-bold text-black">
                   {metric.value}
                 </span>
               </div>

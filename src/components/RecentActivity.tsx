@@ -21,27 +21,27 @@ const activities = [
 
 const RecentActivity: React.FC = () => {
   return (
-    <Card className="bg-white rounded-2xl border border-gray-200 shadow-sm">
-      <CardContent className="p-6">
-        <h2 className="text-lg font-semibold text-gray-900 mb-4">
+    <Card className="bg-white rounded-2xl border border-stroke-gray shadow-sm">
+      <CardContent className="p-4">
+        <h2 className="text-xl font-semibold text-black mb-4">
           Recent Activity
         </h2>
-        <ul className="divide-y divide-[#EAEAEA]">
+        <ul className="divide-y divide-stroke-gray">
           {activities.map((item, idx) => (
             <li
               key={idx}
               className={`flex items-start gap-3 py-3 ${
-                idx < activities.length - 1 ? "border-b border-[#EAEAEA]" : ""
+                idx < activities.length - 1 ? "border-b border-stroke-gray" : ""
               }`}
             >
               <span
                 className={`w-3 h-3 rounded-full mt-1.5 ${item.color}`}
               ></span>
               <div>
-                <p className="text-sm font-medium text-gray-800">
+                <p className="text-sm font-medium text-black">
                   {item.text}
                 </p>
-                <p className="text-xs text-gray-500">{item.time}</p>
+                <p className="text-xs text-secondary-text">{item.time}</p>
               </div>
             </li>
           ))}

@@ -10,9 +10,9 @@
 // import CreateAccountModal from "./components/CreateAccountModal";
 // import Sidebar from "./components/Sidebar";
 // import Header from "./components/Header";
-import AccountOverview from "./components/AccountOverview";
+// import AccountOverview from "./components/AccountOverview";
 // import AccountContact from "./components/AccountContact";
-// import AccountOverviewEdit from "./components/AccountOverviewEdit";
+import AccountOverviewEdit from "./components/AccountOverviewEdit";
 // import PastPerformance from "./components/PastPerformance";
 // import MyAccountNotes from "./components/MyAccountNotes";
 // import MyAccountFinancial from "./components/MyAccountFinancial";
@@ -32,8 +32,8 @@ function App() {
       {/* <SignInPage/> */}
       {/* <ResetPasswordDialog/> */}
       {/* <Header2/> */}
-      <AccountOverview/>
-      {/* <AccountOverviewEdit/> */}
+      {/* <AccountOverview/> */}
+      <AccountOverviewEdit/>
       {/* <AccountContact/> */}
       {/* <PastPerformance/> */}
       {/* <MyAccountNotes/> */}

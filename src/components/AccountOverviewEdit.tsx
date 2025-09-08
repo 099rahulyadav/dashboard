@@ -14,7 +14,7 @@ const AccountOverviewEdit: React.FC = () => {
   return (
     <div className="h-screen flex flex-col overflow-hidden" style={{ backgroundColor: '#F5F3F2' }}>
       {/* Fixed Header */}
-      <Header2  />
+      <Header2 onMenuClick={() => setSidebarOpen(true)}   />
       
       {/* Main layout below header */}
       <div className="flex flex-1 min-h-0">

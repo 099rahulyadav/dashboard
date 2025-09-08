@@ -26,7 +26,7 @@ const AccountOverviewMenu: React.FC = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-2 mb-4 border-2 border-gray-300 p-2 rounded-xl">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-2 mb-4 border border-[#8C8C8C] p-2 rounded-xl">
       {tabs.map((tab) => {
         const isActive = activeTab === tab.label;
         return (
@@ -34,13 +34,13 @@ const AccountOverviewMenu: React.FC = () => {
             key={tab.label}
             onClick={() => setActiveTab(tab.label)}
             variant="outline"
-            className={`flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm w-full ${
+            className={`flex my-1 items-center justify-center gap-1.5 sm:gap-2 rounded-xl px-2 sm:px-3 lg:px-4 py-2 text-xs sm:text-sm font-medium whitespace-nowrap w-full ${
               isActive
-                ? "bg-gray-900 text-white border-gray-900"
-                : "border border-gray-200 text-gray-900 hover:bg-gray-100"
+                ? "bg-button text-white"
+                : "border border-stroke-gray text-black-900 bg-input-default"
             }`}
           >
-            <tab.icon size={16} />
+            <tab.icon size={14} className="sm:w-4 sm:h-4" />
             {tab.label}
           </Button>
         );

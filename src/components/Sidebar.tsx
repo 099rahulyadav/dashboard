@@ -94,7 +94,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
         {/* Logout */}
         <div className="p-4 border-gray-200">
-          <button className="w-full flex items-center space-x-3 px-3 py-10 text-black rounded-lg transition-colors">
+          <button className="w-full flex items-center space-x-3 px-3 mb-10 text-black rounded-lg transition-colors">
             <SignOut size={18} weight="bold" className="text-black" />
             <span className="text-sm font-medium">Log-out</span>
           </button>
